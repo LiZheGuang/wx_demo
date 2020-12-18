@@ -1,0 +1,163 @@
+page {
+  background-color: #f9f9f9;
+}
+
+.swiper_box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper_img {
+  height: 240px;
+}
+
+.slide_image {
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.addenter_content {
+  width: 100%;
+  border-top: 20rpx solid #f9f9f9;
+  border-left: 20rpx solid #f9f9f9;
+  border-right: 20rpx solid #f9f9f9;
+  padding-bottom: 120rpx;
+}
+
+.other_information {
+  background: white;
+  border-radius: 8rpx;
+  border-top: 20rpx solid #f9f9f9;
+  padding-bottom: 20rpx;
+}
+
+.addenter_imguoload {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.addenter_flexleft {
+  width: 3%;
+  margin-top: 20rpx;
+}
+
+.addenter_vbar {
+  width: 4px;
+  height: 32rpx;
+  background-color: #fccc04;
+  border-radius: 2rpx;
+  margin-top: 4px;
+}
+
+.addenter_flexright {
+  width: 94%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.addenter_flexright text {
+  font-size: 28rpx;
+  color: #000000;
+  padding-left: 1%;
+}
+
+.other_information .form_content {
+  padding: 0 26rpx;
+}
+
+._form_list {
+  padding: 28rpx 0;
+}
+
+.weui-label {
+  color: #494848;
+  font-size: 28rpx;
+}
+
+.picker_date {
+  color: #494848;
+  font-size: 28rpx;
+}
+
+.weui-input {
+  color: #494848;
+  font-size: 28rpx;
+  text-align: right;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.content_text {
+  padding: 8px 0;
+}
+
+.equipment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+}
+
+.equipment_price text {
+  color: red;
+}
+
+.equipment_state {
+  color: #fccc04;
+}
+
+.total {
+  text-align: right;
+  margin-right: 26rpx;
+  font-size: 28rpx;
+  padding: 6px 0;
+}
+
+.total text {
+  color: red;
+}
+
+/* .form_submit {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+}
+.form_submit button{
+  width: 100% !important;
+  color: #040404;
+  font-weight: 400;
+  font-size: 28rpx;
+  background-color: #fccc04 !important;
+} */
+.footerbox{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80rpx;
+  background-color: white;
+  z-index: 10;
+}
+.buttonbox{
+  display: flex;
+  justify-content:flex-end;
+}
+.catbtnbox{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background-color: #fccc04;
+}
+.orderbtnbox{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: white;
+  background-color: red;
+}

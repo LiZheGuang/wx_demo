@@ -1,0 +1,85 @@
+<view class="shop_box">
+  <!-- 内容展示str -->
+  <view class="addenter_content">
+    <!-- 轮播图str -->
+    <view class='swiper_box'>
+      <swiper class="swiper_img" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{imgUrls}}" wx:key="index">
+          <swiper-item>
+            <image class="slide_image" src="{{item}}" id="{{item}}" bindtap='previewImage'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--轮播图end-->
+    <!-- 信息展示str -->
+    <view class="content_text">
+      <view class="_one_ellipsis">标题</view>
+      <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道
+      </view>
+      <view class="equipment">
+        <view class="equipment_price"><text>￥{{unitprice}}</text>/天</view>
+        <view class="equipment_state">待使用</view>
+      </view>
+    </view>
+    <!-- 信息展示end -->
+    <!-- <form catchsubmit="formSubmit"> -->
+      <view class="other_information">
+        <view class=" weui-flex addenter_imguoload">
+          <view class="addenter_flexleft">
+            <view class="addenter_vbar"></view>
+          </view>
+          <view class="addenter_flexright">
+            <text>租赁天数/数量</text>
+          </view>
+        </view>
+        <!-- 若已经租赁 表单数据不展示str -->
+        <view>
+        <view class="form_content">
+          <view class="_form_list _flex_between uploadimg">
+            <view class="weui-label ">租赁天数</view>
+            <input class="weui-input" type="number" name="leasedata" value="{{leasedatas}}" bindblur="datasbind"/>
+          </view>
+        </view>
+        <view class="form_content">
+          <view class="_form_list _flex_between uploadimg">
+            <view class="weui-label ">租赁数量</view>
+            <input class="weui-input" type="number" name="leasenum" value="{{leasenums}}" bindblur="numsbind"/>
+          </view>
+        </view>
+        <view class="total">总计:<text>￥{{totalprice}}</text></view>
+        <view class=" weui-flex addenter_imguoload">
+          <view class="addenter_flexleft">
+            <view class="addenter_vbar"></view>
+          </view>
+          <view class="addenter_flexright">
+            <text>租赁地址/手机号</text>
+          </view>
+        </view>
+        <view class="form_content">
+          <view class="_form_list _flex_between">
+            <view class="weui-label">联系电话</view>
+            <input class="weui-input" type="text" name="phonename" placeholder="请选择联系电话" value="{{phoneval}}"
+              disabled  bindtap="settextClick"/>
+          </view>
+        </view>
+        <view class="form_content">
+          <view class="_form_list _flex_between">
+            <view class="weui-label">租赁地址</view>
+            <input class="weui-input" type="text" name="addressname" placeholder="请选择租赁地址" value="{{addressval}}"
+              disabled  bindtap="settextClick"/>
+          </view>
+        </view>
+        </view>
+        <!-- 若已经租赁 表单数据不展示end -->
+      </view>
+    <!-- </form> -->
+  </view>
+  <!-- 内容展示end-->
+  <view class="footerbox">
+      <view class="buttonbox">
+          <view class="catbtnbox" bindtap="catClick">加入购物车</view>
+          <view class="orderbtnbox" bindtap="orderClick">立即下单</view>
+      </view>
+  </view>
+</view>

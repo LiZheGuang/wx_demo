@@ -1,0 +1,59 @@
+.spadmin_box{
+  width: 100%;
+}
+.supplier_data{
+  width: 94%;
+  margin:0 auto;
+  margin-top: 16rpx;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+}
+.supplier_information{
+  flex: 0.8;
+  width: 80%;
+  height: 100%;
+}
+.spadmin_operation{
+  flex:0.2;
+  width: 20%;
+  height: 100%;
+}
+.weui-media-box__title{
+  font-size: 28rpx;
+}
+.weui-media-box__desc{
+  color: #000000;
+}
+.spadmin_operation view{
+    font-size: 24rpx;
+    color: white;
+    text-align: center;
+    background-color:#d52929;
+    float: right;
+    padding: 5rpx 22rpx;
+    margin-top: 48rpx;
+    border-radius: 4rpx;
+}
+.defaultmr{
+  display: inline-block;
+  width: 34px;
+  background: red;
+  border-radius: 4px;
+  font-size: 24rpx;
+  color: white;
+  text-align: center;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+.address_btn{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  margin-right: 10rpx;
+  font-size: 28rpx;
+  background-color: #fccc04;
+  border-radius: 8rpx;
+}

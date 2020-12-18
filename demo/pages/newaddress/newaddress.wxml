@@ -1,0 +1,22 @@
+<view class="theform_box">
+  <!--类别表单str -->
+    <view class="form_content _padd40">
+      <view class="_form_list _flex_between ">
+        <view class="weui-label">联系电话</view>
+        <input class="weui-input" type="number" maxlength="11" name="phonename" placeholder="请输入联系电话" value="{{phoneval}}"  bindblur="lxphone"/>
+      </view>
+      <view class="_form_list _flex_between ">
+        <view class="weui-label">租赁地址</view>
+        <input class="weui-input" type="text" name="addressname" placeholder="请输入租赁地址" value="{{addressval}}" bindblur="lxaddress"/>
+      </view>
+    </view>
+    <!--类别表单end -->
+    <!--提交按钮str-->
+    <view class="form_submit">
+      <button type="primary" formType="submit" hover-class="none" bindtap="determineClick">确定</button>
+    </view>
+    <view class="form_submit">
+      <button type="primary" formType="submit" hover-class="none" bindtap="mrszClick">设为默认</button>
+    </view>
+    <!--提交按钮end -->
+</view>

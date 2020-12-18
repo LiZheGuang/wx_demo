@@ -1,0 +1,55 @@
+.container{
+  width: 96%;
+  margin: 0 auto;
+}
+.equipment_box{
+  width: 100%;
+  margin: 0 auto;
+}
+.weui-panel__hd{
+  border-bottom: 1px solid #eeeeee;
+}
+.swiper_box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper_img {
+  height: 240px;
+}
+
+.slide_image {
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.weui-media-box{
+  padding:8px 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+.weui-panel:after, .weui-panel:before {
+  border: none;
+}
+.weui-panel__hd:after {
+  border: none;
+}
+.weui-panel:after{
+  border: none;
+}
+.index_img{
+  border-radius: 8rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.equipment{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+}
+.equipment_price text{
+  color: red;
+}
+.equipment_state{
+  color: #fccc04;
+}

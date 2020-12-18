@@ -1,0 +1,186 @@
+/* tab切换 */
+page{
+  background: #f9f9f9;
+  }
+  .stock_tab{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40rpx;
+  }
+  .swiper-tab{
+    position: fixed;
+    top: 0;
+    left: 3%;
+    z-index: 29;
+    width: 94%;
+    background: white;
+  }
+  .stock_topcontent{
+    background-color: white;
+    padding: 0 20rpx;
+    padding-bottom: 32rpx;
+    height: 40px;
+  }
+  .stock_item{
+    height: 68rpx;
+    line-height: 68rpx;
+    text-align: center;
+  }
+  .stock_tab .stock_search{
+    width: 100%;
+    margin-top: 68rpx;
+  }
+  .swiper-tab .select{
+    color: #000000;
+    border-bottom: 3px solid #fccc04;
+    font-size: 26rpx;
+    padding-bottom: 6rpx;
+  }
+  .swiper-tab .nchecked {
+    color: #000000;
+    font-size: 26rpx;
+  }
+  .stock_downshelf{
+    display: flex;
+    justify-content:flex-end;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 8rpx;
+    margin-right: 8px;
+  }
+  .stock_downshelf button{
+    outline: none;
+    font-size: 22rpx;
+    background-color: #fff;
+    border-radius: 4rpx;
+    color: #fccc04;
+    border: 1px solid #fccc04;
+  }
+  .stock_downedit{
+    margin-top: 3px;
+  }
+  .stock_downedit button{
+    outline: none;
+    font-size: 22rpx;
+    background-color: #fff;
+    border-radius: 4rpx;
+    color: #999;
+    border: 1px solid #999;
+  }
+  .delivery{
+    font-size: 24rpx;
+    color: #fccc04;
+    border: 1px solid #fccc04;
+    padding:0 6px;
+    height: 22px;
+    line-height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  /* 内容展示 */
+  .stock_content{
+    width: 96%;
+    margin: 0 auto;
+  
+  }
+  .stock_title{
+    height: 88rpx;
+    line-height: 88rpx;
+  }
+  .stock_loop{
+    background: white;
+    border-radius: 8rpx;
+    margin-top: 20rpx;
+    padding-top: 12rpx;
+    padding-bottom: 8rpx;
+  }
+
+/* 库存管理列表 */
+  .stock_panel{
+    width: 94%;
+    margin: 0 auto;
+    border-bottom:1px dashed #eeeeee ;
+  }
+  .stock_msg {
+  padding: 8px 4px;
+  }
+  
+  .stock_flexleft {
+    flex-grow: 0.4;
+    margin-top: 30rpx;
+  }
+  
+  .stock_flexright {
+    height: 100%;
+    flex-grow: 9.6;
+    margin-right: 28rpx;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .stock_vbar {
+    width: 4px;
+    height: 32rpx;
+    background-color: #fccc04;
+    border-radius: 8rpx;
+  }
+  
+  .stock_msg:hover {
+    background: white !important;
+  }
+  .stock_sptitle {
+    color: #000000;
+    font-size: 28rpx;
+    font-weight: 600;
+  }
+  .supplier_name{
+    color: #494848;
+    font-size: 28rpx;
+  }
+  
+  .backgroundBox {
+    width: 120rpx !important;
+    height: 120rpx !important;
+    margin-right: 0;
+    text-align: left;
+    border-radius: 8rpx;
+  }
+  .specifications {
+    font-size: 28rpx;
+    color: #494848;
+  }
+  .goods_ize {
+    margin-left: 20rpx;
+  }
+  .stock_spcontent {
+    padding: 0 4px;
+    width: 94%;
+    margin: 0 auto;
+    height: 42px;
+    line-height: 42px;
+  }
+  .border_color{
+    border-bottom: 1px dashed #eeeeee;
+  }
+  .supplierName {
+    font-size: 28rpx;
+    flex-grow: 5;
+    width: 32%;
+    color: #494848;
+  }
+  
+  .registrationTime {
+    font-size: 24rpx;
+    flex-grow: 5;
+    width: 68%;
+    color: #8f8f8f;
+    text-align: right;
+    height: 42px;
+    line-height: 42px;
+  }
+  .pricebox text{
+    color: red;
+  }
+  .search_width{
+    width: 100%;
+  }
+  

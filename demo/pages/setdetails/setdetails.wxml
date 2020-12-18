@@ -1,0 +1,12 @@
+<view class="setdetailsbox">
+	<view class="weui-flex supplier_data" wx:for="{{setArry}}" wx:key="index">
+			<view class="weui-flex__item supplier_information"  data-id="{{item.addressid}}" data-phone="{{item.phone}}" data-address="{{item.address}}" bindtap="addresssetClick">
+				<view class="weui-media-box__title"><text class="defaultmr" wx:if="{{item.mr}}">默认</text>{{item.phone}}</view>
+					<view class="weui-media-box__desc">{{item.address}}</view>
+			</view>        
+			<view class="spadmin_operation">
+          <view data-id="{{item.addressid}}" catchtap="deletecontentClick">删除</view>
+      </view>
+		</view>
+		<view class="address_btn" bindtap="addressClick">新增地址</view>
+</view>

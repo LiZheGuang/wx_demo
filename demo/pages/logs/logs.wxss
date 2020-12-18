@@ -1,0 +1,70 @@
+/* pages/my/my.wxss */
+page {
+  background: #f9f9f9;
+}
+.head_module {
+  background: #fccd05;
+}
+.user_info_box {
+  width: 77%;
+  font-size: 0;
+  padding: 43rpx 0rpx 66rpx 28rpx;
+}
+.user_avatar {
+  width: 94rpx;
+  height: 94rpx;
+  margin-right: 28rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.user_msg{
+  display: flex;
+}
+.user_msg image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.user_msg .nicknamebox {
+  color: #040404;
+  font-size: 28rpx;
+  line-height: 30rpx;
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.login_btn {
+  width: 60px !important;
+  height: 50rpx !important;
+  color: #ffffff;
+  line-height: 46rpx;
+  font-size: 24rpx;
+  padding: 0 10rpx 0 32rpx !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  background: rgba(0,0,0,0.6);
+  border-radius: 40rpx 0 0 40rpx !important;
+  -webkit-border-radius: 40rpx 0 0 40rpx !important;
+}
+/* 入口列表 */
+.entrance_moudel {
+  font-size: 0;
+  margin-top: 38rpx;
+  background: #ffffff;
+}
+.entrance_list {
+  padding: 28rpx 32rpx 28rpx 28rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+.help_icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+.list_name>view {
+	color: #333333;
+  font-size: 28rpx;
+  margin-left: 23rpx;
+}
+.arrow_img {
+  width: 15rpx;
+  height: 28rpx;
+}

@@ -1,0 +1,91 @@
+<view class="pages">
+  
+  <view wx:if="{{hasList}}">
+    <!-- 选取地址str -->
+    <view class="addressbox">
+        <view class="addressboxno" wx:if="{{!addressval}}" bindtap="addreClick">请选择收获地址</view>
+        <view class="addressboxno" wx:if="{{addressval}}" bindtap="addreClick">{{addressval}}  {{phoneval}}</view>
+    </view>
+    <!-- 选取地址end -->
+    <!-- 编辑 -->
+      <view class='cartHeader'>
+        <view class='logo'>
+            <text>租赁</text>
+        </view>
+        <view class='edit'>
+          <label class='edit_btn' bindtap='btn_edit'>{{edit_name}}</label>
+      </view>
+      </view>
+      <!-- 列表 -->
+      <view class="list" wx:for="{{list}}" wx:key="index">
+         <image class='dele_edit' bindtap='deletes' data-index='{{index}}' style='display:{{edit_show}}' src='../../images/deteal.png'></image>
+        <!-- radio选择IOCN -->
+        <icon wx:if="{{item.selected}}"   type="success" color="#fccc04;" data-index="{{index}}" size='22' class="radio_chek" bindtap="selectList" />
+        <icon wx:else type="circle" color="#fccc04;"  class="radio_chek" data-index="{{index}}"  size='22' bindtap="selectList" />
+  
+        <!-- 列表标题 -->
+        <text class="list_name">{{item.title}}</text>
+        <!-- 列表商品图片 -->
+        <view class="list_img  _bgImgCover" style=" background-image: url({{item.image}});">
+        </view>
+        <!-- 规格 -->
+        <text class="cart_g_name">规格 : {{item.pro_name}}</text>
+     
+        <!-- 价格 -->
+        <text class="list_price">￥{{item.price}}</text>
+        <!-- 商品数量加减  style='display:{{show_edit}}'-->
+        <view style='display:{{show_edit}}'>
+          <!--数量str -->
+          <view class="carts-num">
+            <label class="numtext">数量：</label>
+            <!--减按钮  -->
+            <lable class="minus" bindtap="btn_minus"  data-index="{{index}}">-</lable>
+            <!-- 文本框值 -->
+            <label class="view_text_center" data-index="{{index}}">{{item.num}}</label>
+            <!-- 加按钮-->
+            <lable class="plus" bindtap="btn_add" data-index="{{index}}">+</lable>
+          </view>
+           <!--数量end -->
+
+            <!--天数str -->
+          <view class="carts-numdata carts-num">
+            <label class="numtext">天数：</label>
+            <!--减按钮  -->
+            <lable class="minus" bindtap="btn_minusdata" data-index="{{index}}">-</lable>
+            <!-- 文本框值 -->
+            <label class="view_text_center" data-index="{{index}}">{{item.data}}</label>
+            <!-- 加按钮-->
+            <lable class="plus" bindtap="btn_adddata" data-index="{{index}}">+</lable>
+          </view>
+           <!--天数end -->
+           
+         </view>
+     </view>
+      
+   </view>
+    
+  <view wx:else>
+    <view class="list_none">购物车是空的哦~</view>
+  </view>
+  
+</view>
+ 
+ 
+  <!-- 固定底部 -->
+  <view class="cont_bot">
+       <!-- 全选ICON -->
+      <icon wx:if="{{selectAllStatus}}"   type="success" color="#fccc04;" size='22' class="total-select" bindtap="selectAll" />
+      <!-- else -->
+      <icon wx:else type="circle" color="#999" class="total-select" size='22' bindtap="selectAll" />
+         <!-- 全选标题 -->
+      <text class='sel_count_name'>全选</text>
+      <!-- 合计金额 -->
+      <lable class="count_price">
+        <view> <text>不含运费</text></view>
+        <view>
+           合计：<text>￥{{totalPrice}}</text>
+        </view>
+      </lable>
+      <!-- 提交订单 -->
+      <label class='submit' bindtap='btn_submit_order'>去结算（{{settlement}}）</label>
+ </view>

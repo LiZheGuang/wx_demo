@@ -1,0 +1,49 @@
+<view class="stock_box">
+  <!-- tab切换str -->
+  <view class="stock_tab">
+    <view class="stock_topcontent">
+      <!-- tab切换按钮str -->
+      <view class="weui-flex swiper-tab">
+        <view class="weui-flex__item stock_item" wx:for="{{modefenlei}}" wx:key="index">
+          <view id="{{'selected'+index}}" data-index="{{index}}" bindtap='stocktapClick' data-id="{{item.target}}">
+            <text class="{{tabArr.curHdIndex=='selected'+index? 'select':'nchecked'}}">{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+      <!-- tab切换按钮end -->
+    </view>
+    <!-- 内容展示str -->
+    <view class="stock_content">
+      <view class="stock_loop" wx:for="{{loopcontArry}}" wx:for-index="itemIndex" wx:key="index">
+        <!-- 内容循环str -->
+        <!-- 列表信息str -->
+        <view class="weui-panel__bd stock_panel">
+          <a class="weui-media-box weui-media-box_appmsg stock_msg">
+            <view class="weui-media-box__hd backgroundBox  _bgImgCover" style=" background-image: url({{item.url}});">
+            </view>
+            <view class="weui-media-box__bd specifications">
+              <view class="_one_ellipsis pricebox">价格：<text>￥{{item.price}}</text>/天</view>
+              <view class="_one_ellipsis">名称：{{item.text}}</view>
+            </view>
+          </a>
+        </view>
+        <!-- 列表信息end -->
+        <!-- 操作人str -->
+        <view class="weui-flex stock_spcontent">
+          <view class="weui-flex__item supplierName">
+            <view class="_one_ellipsis">总价：{{item.numprice}}</view>
+          </view>
+          <view class="weui-flex__item registrationTime">
+            <view class="_one_ellipsis" wx:if="{{node_child==1}}">待使用时间：{{item.time}}</view>
+            <view class="_one_ellipsis" wx:if="{{node_child==2}}">使用时间：{{item.time}}</view>
+            <view class="_one_ellipsis" wx:if="{{node_child==3}}">已完成时间：{{item.time}}</view>
+          </view>
+        </view>
+        <!-- 操作人end -->
+        <!-- 内容循环end -->
+      </view>
+    </view>
+    <!-- 内容展示end -->
+  </view>
+  <!-- tab切换end -->
+</view>

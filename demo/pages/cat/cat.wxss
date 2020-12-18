@@ -1,0 +1,265 @@
+page{
+  height:100%;
+}
+.pages{
+  background:#f3f3f3;
+  width:100%;
+  min-height:100%;
+  border:1px solid transparent;
+  padding-bottom: 60px;
+}
+.pages>view{
+  width:100%;
+  margin: 0 auto;
+  margin-top: 4px;
+  background: #fff;
+  border-radius:4rpx;
+  border:1px solid transparent;
+  padding-bottom:30rpx;
+}
+/* 列表 */
+.list{
+    position: relative;
+    width: 100%;
+    height: 260rpx;
+    background: #FAFAFA;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.addressbox{
+    padding:10px 20px;
+    font-size: 28rpx;
+}
+/* 编辑 */
+.cartHeader{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding:10rpx 30rpx;
+  border:1px solid transparent;
+  position: relative;
+}
+.cartHeader .logo image{
+  width:30rpx;
+  height:30rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cartHeader .logo text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size:32rpx;
+  font-family:NotoSansHans-Regular;
+  font-weight:400;
+  color:rgba(48,48,48,1);
+  margin-left:15rpx;
+}
+.edit{
+  height:60rpx;
+  line-height:70rpx;
+  font-size:24rpx;
+}
+/* 删除 */
+.dele_edit{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  right: 30rpx;
+  bottom: 25rpx;
+}
+/* 编辑标题 */
+.edit_btn{
+    position: absolute;
+    font-size: 28rpx;
+    color: red;
+    right: 30rpx;
+}
+/* 单选状态 */
+.radio_chek{
+    position: absolute;
+    left: 30rpx;
+    top: 70rpx;
+    width:37rpx;
+    height: 37rpx;
+}
+/* 列表商品图片 */
+.list_img{
+    position: absolute;
+    top: 38rpx;
+    left: 100rpx;
+    width:118rpx;
+    height:118rpx;
+    border-radius: 4px;
+}
+/* 列表规格 */
+.cart_g_name{
+    position: absolute;
+    left: 280rpx;
+    font-size: 26rpx;
+    color: #aaa;
+    top: 75rpx;
+}
+/* 收藏 */
+.collert{
+    position: absolute;
+    font-size: 28rpx;
+    right: 40rpx;
+    top: 30rpx;
+}
+/* 收藏图标 */
+.collert_img{
+    position: relative;
+    top: 2rpx;
+    width: 28rpx;
+    height: 28rpx;
+}
+/* 列表商品名称 */
+.list_name{
+    position: absolute;
+    left: 280rpx;
+    top: 30rpx;
+    width: 350rpx;
+    /* background-color: red; */
+    font-size: 26rpx;
+    overflow: hidden;    
+    text-overflow:ellipsis;    
+    white-space: nowrap;
+}
+/* 列表商品价格 */
+.list_price{
+    position: absolute;
+    font-size: 30rpx;
+    color: red;
+    left: 280rpx;
+    bottom: 98rpx;
+}
+ 
+/* 列表商品删除 */
+.list_del{
+    position: absolute;
+    right: 220rpx;
+    bottom: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 44rpx;
+}
+/* 固定底部 */
+.cont_bot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 104rpx;
+    line-height:104rpx;
+    background: #fff;
+    border-top: 2rpx solid #ebebeb;
+}
+/* 全选ICON */
+.total-select{
+    position: absolute;
+    left: 30rpx;
+    top: 30rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+/* 全选标题 */
+.sel_count_name{
+    position: absolute;
+    left: 90rpx;
+    top: 6rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+ 
+/* 合计金额 */
+.count_price{
+    position: absolute;
+    font-size:28rpx;
+    left: 230rpx;
+    color: #aaa;
+}
+.count_price > view{
+    height:50rpx;
+    line-height:50rpx;
+    color:#231D1E;
+}
+.count_price > view:first-child text{
+  float:right;
+  font-size:24rpx;
+  color:#5D5D5D;
+}
+.count_price  view:last-child text{
+    font-size: 30rpx;
+    color: red;
+}
+.numtext{
+    font-size: 26rpx;
+    color: #5D5D5D;
+}
+/* 购物车为空 */
+.list_none{
+    padding:40rpx 0;
+    color: #999;
+    text-align: center;
+}
+/* 提交 */
+.submit{
+    position: absolute;
+    width: 274rpx;
+    height: 104rpx;
+    line-height: 104rpx;
+    right: 0rpx;
+    font-size: 30rpx;
+    text-align: center;
+    color:#fff;
+    background:linear-gradient(90deg,rgba(255,0,0,0.6) 0%,rgba(255,0,0,1) 100%);
+}
+.navigator-hover{
+    background: none;
+}
+ 
+ 
+ 
+ 
+/*数量加减*/
+.carts-num{
+    position: absolute;
+    right: 30rpx;
+    bottom: 98rpx;
+    /* background-color: red; */
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+    height: 50rpx;
+}
+.carts-numdata{
+    position: absolute;
+    right: 30rpx;
+    bottom: 30rpx;
+    /* background-color: red; */
+    display: flex; 
+    align-items: center; 
+    text-align: center;
+      height: 50rpx;
+}
+.view_text_center{
+    border: 1rpx solid #ebebeb;
+    font-size: 30rpx;  
+    display: inline-block;
+    color: #333;
+    height: 50rpx;
+    line-height: 50rpx;width: 76rpx;
+}
+.carts-num .minus, .carts-num .plus{
+    margin: 10rpx; 
+    border: 1rpx solid #ebebeb;
+    color: #000;
+    text-align: center;
+    height: 50rpx; 
+    line-height: 50rpx;
+    width: 40rpx;
+}
+.carts-num .minus{font-size: 34rpx;}
+/* .carts-num .minus.disabled{color: red;} */
+.carts-num .plus{font-size: 34rpx;}

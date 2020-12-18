@@ -1,0 +1,32 @@
+<view class="container">
+	  <!-- 轮播图str -->
+    <view class='swiper_box'>
+      <swiper class="swiper_img" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{imgUrls}}" wx:key="index">
+          <swiper-item>
+            <image class="slide_image" src="{{item.bannerimg}}" data-id="{{item.id}}" bindtap='previewImage'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--轮播图end-->
+  <view class="weui-panel weui-panel_access equipment_box">
+    <view class="weui-panel__hd">设备器材列表</view>
+      <view class="weui-panel__bd" wx:for="{{equipmentArry}}" wx:key="index">
+				<a class="weui-media-box weui-media-box_appmsg" data-equipmentval="{{item.equipmentid}}" bindtap="equipmentClick">
+					<view class="weui-media-box__hd">
+            <view class="index_img  _bgImgCover" style=" background-image: url({{item.url}});">
+        </view>
+					</view>
+					<view class="weui-media-box__bd">
+						<view class="weui-media-box__title _one_ellipsis">{{item.text}}</view>
+						<view class="weui-media-box__desc">{{item.title}}</view>
+						<view class="equipment">
+                <view class="equipment_price"><text>￥{{item.price}}</text>/{{item.date}}</view>
+                <view class="equipment_state">{{item.state}}</view>
+            </view>
+					</view>
+				</a>
+      </view>
+  </view>    
+</view>

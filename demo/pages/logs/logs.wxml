@@ -1,0 +1,40 @@
+<!--logs.wxml-->
+<!-- 头部 -->
+<view class="head_module _flex_between">
+  <view class="user_info_box _flex_align" catchtap="userInfoEdit">
+    <view class="user_avatar"  class="user_msg">
+      <view><image src="{{urlimg}}"></image></view>
+      <view class="nicknamebox">{{nickName}}</view>
+    </view>
+  </view>
+  <!-- 有用户信息显示编辑，否则显示登录 -->
+  <button wx:if='{{!isHasUserInfo}}' class="login_btn" type="button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+</view>
+<!-- 入口列表 -->
+<view class="entrance_moudel">
+  <view class="entrance_list _flex_between" bindtap="listClick">
+    <view class="list_name _flex_align">
+      <image class="help_icon" src="../../images/dsy.png"></image>
+      <view>待使用</view>
+    </view>
+  </view>
+  <view class="entrance_list _flex_between" bindtap="syzClick">
+    <view class="list_name _flex_align">
+      <image class="help_icon" src="../../images/ysy.png"></image>
+      <view>使用中</view>
+    </view>
+  </view>
+  <view class="entrance_list _flex_between" bindtap="ywcClick">
+    <view class="list_name _flex_align">
+      <image class="help_icon" src="../../images/wc.png"></image>
+      <view>已完成</view>
+    </view>
+  </view>
+  <view class="entrance_list _flex_between" bindtap="setClick">
+    <view class="list_name _flex_align">
+      <image class="help_icon" src="../../images/set_icon.png"></image>
+      <view>设置</view>
+    </view>
+  </view>
+</view>
+

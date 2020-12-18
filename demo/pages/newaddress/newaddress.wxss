@@ -1,0 +1,16 @@
+.form_content ._form_list{
+  border-bottom: 1px dashed #eeeeee;
+}
+.form_submit {
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+}
+.form_submit button{
+  width: 100% !important;
+  color: #040404;
+  font-weight: 400;
+  font-size: 28rpx;
+  background-color: #fccc04 !important;
+}
